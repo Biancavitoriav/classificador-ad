@@ -1,6 +1,6 @@
 ﻿# classificador-ad
 
-Antes de executar este projeto, rode os seguintes comandos:
+Antes de executar o projeto, rode os seguintes comandos:
 
 ```bash
 pip install -U ipykernel
