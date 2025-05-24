@@ -1,0 +1,72 @@
+Analise de dados
+
+Aprendizagem supervisionada
+
+Aprendizagem supervisionada é uma técnica de machine learning onde o modelo é treinado com dados rotulados, ou seja, dados que já possuem as respostas corretas. O objetivo é que, após o treinamento, o modelo consiga fazer previsões ou classificações sobre novos dados.
+
+Algoritmos/bibliotecas usadas podem ser classificadas dessa forma:
+-Classificação: prever categorias (por exemplo, spam ou não-spam).
+-Regressão: prever valores contínuos (por exemplo, o preço de uma casa).
+
+As etapas são:
+
+1.Coleta de Dados: coletando os dados quantitativos e qualitativos referentes;
+
+2.Pré-processamento:dados são adequados ao formato ideal para a manipulação numérica que seguirá;
+
+3.Separação para treino e teste: define-se a porção do dataset que será destinada ao treino do algoritmo e qual será destinada a avaliação;
+
+4.Seleção de Algoritmo: qual algoritmo (biblioteca) será usada em vista o contexto estudado e a natureza numérica;
+
+5.Treino: para que o algoritmo aprimore sua capacidade de rotulação
+
+6.Avaliação: a rotulação de novos dados e avalia-se a performance do algoritmo
+
+Os tipos de variáveis que da pra encontrar ao analisar um dataset no pre processamento de dados é:
+-Qualitativas: são categorias, mas não envolve números, ex: tipo de produto, tamanho de roupa
+ -Qualitativa Nominal: não tem ordem, ex: cores, gênero
+ -Qualitativa ordinal: tem ordem,, ex: escolaridade, satisfação (ruim, bom, ótimo) 
+
+-Quantitativas: representam números, consequentemente da pra fazer operações matemáticas
+ -Quantitativas discreta: valores inteiros, ex: idade, numero de filhos
+ -Quantitativas contínua: qualquer valor, decimais e ate fração, ex: altura, peso, temperatura
+
+Escolhendo o algoritmo: Naive Bayes\
+Usamos o Naive Bayes porque ele é simples, rápido, bom com variáveis categóricas e adequado para classificação binária, como neste problema.\
+
+Naive Bayes: Qual é a chance de algo acontecer, dado que outra coisa já aconteceu?\
+Classe: ex: “Renda >50K” ou “Renda ≤50K”.\
+Atributos: ex: sexo, raça, ocupação, etc 
+
+O algoritmo leva em consideração, então, por exemplo: "Qual a chance da pessoa ganhar >50K dado que ela é homem, branco, casado, etc?"
+
+Além da acuracia, utilizaremos a  matriz de confusão</b> para saber onde o modelo está errando
+
+Os 4 cenários possíveis  na matriz:
+
+✅ Verdadeiro Positivo (TP):
+→ O modelo acertou: disse que a renda era >50K, e realmente era.
+
+✅ Verdadeiro Negativo (TN):
+→ O modelo acertou: disse que era ≤50K, e realmente era.
+
+❌ Falso Positivo (FP):
+→ O modelo errou: disse que era >50K, mas na verdade era ≤50K.
+
+❌ Falso Negativo (FN):
+→ O modelo errou: disse que era ≤50K, mas na verdade era >50K.
+
+Exemplo:
+
+[50 ; 10]
+'[ 5  ; 35]
+
+50 → TN → acertou que era ≤50K
+
+10 → FP → errou, disse >50K mas era ≤50K
+
+5 → FN → errou, disse ≤50K mas era >50K
+
+35 → TP → acertou que era >50K
+
+
